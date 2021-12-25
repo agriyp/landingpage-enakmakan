@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <h3>Sedang Mencari...</h3>
+    </div>
+
+    <div class="hero-bg">
+        <section class="top"> <!-- section 1 -->
+            <header>
+                <a href="#">enakmakan.com</a>
+            </header>
+
+            <h1><span>Makan Enak</span> Tubuhpun Sehat</h1>
+
+            <p>Kami sediakan makanan yang sehat namun tetap enak, enjoy your eats.</p>
+
+            <div class="form-container">
+                <form action="">
+                    <div class="form-left">
+                        <label for="kota">Masukan Kotamu</label>
+                        <input type="text" name="city" id="city">
+                        <p>Contoh: "Bandung"</p>
+                    </div>
+
+                    <input type="button" value="Cari Makanan Sekarang" id="cta-btn">
+                </form>
+            </div>
+        </section>
+    </div>
+
+
+
+    <section class="authentic">
+        <div class="right-col">
+            <h2>Sehat, Enak, Sempurna</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus mollitia provident odio cupiditate quis. Voluptates possimus, saepe pariatur ratione mollitia nulla modi neque! Quo, libero?</p>
+        </div>
+        <img src="images/food1.jpg" alt="Makanan 1 Dimsum">
+    </section>
+    
+    <script>
+
+        let btn = document.getElementById('cta-btn');
+        let overlay = document.getElementById('overlay');
+
+        btn.addEventListener('click', () => {
+            overlay.style.display = 'grid';
+            overlay.classList.add('animate-overlay')
+        })
+
+    </script>
+
+</body>
+</html>
